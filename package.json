@@ -1,0 +1,29 @@
+{
+  "name": "nodelessons",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello":"node index.js",
+    "start":"node index.js"
+ 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lusine1509/node-lessons.git"
+  },
+  "author": "lusine andriasyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lusine1509/node-lessons/issues"
+  },
+  "homepage": "https://github.com/Lusine1509/node-lessons#readme",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  }
+}
