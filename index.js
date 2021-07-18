@@ -20,15 +20,15 @@ logger.on('login', (name) => {
 })
 
 
-logger.on('getUsers', () => {
-     if(argv.addUser){users.push(argv.addUser)};
+logger.on('getUsers', (user) => {
+     if (user) users.push(user);
      console.log(`logged users\n${users.join('\n')}`);
      console.log(users);
 })
 
 
-logger.on('getMessages',()=>{
-    if(argv.message){ msgs.push(argv.message)};
+logger.on('getMessages',(mes)=>{
+    if(mes) msgs.push(mes);
     console.log(`messages\n${msgs.join('\n')}`);
     console.log(msgs);
 })
@@ -39,5 +39,5 @@ logger.on('getMessages',()=>{
     logger.emit('login', 'lyol');
     logger.emit('login', 'tatev');
 
-    logger.emit('getUsers');
-    logger.emit('getMessages');
+    logger.emit('getUsers', argv.addUser);
+    logger.emit('getMessages',argv.message);
